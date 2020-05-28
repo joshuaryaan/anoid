@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    font-family: 'BenchNine', sans-serif;
+}
+
+body.project {
+    padding-top: calc(80px + 80px);
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 46px;
+    margin: 0 0 20px 0;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 34px;
+    margin: 0 0 8px 0;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 28px;
+    margin: 5px 0 20px 0;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    margin: 0 0 6px 0;
+}
+
+h4:last-of-type{
+    margin: 0 0 20px 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #383a3c;
+}
+
+.index {
+    background-image: url("../media/background.jpg");
+    background-attachment: fixed;
+}
+
+.index .navigation {
+    position: static;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+nav {
+    height: 100%;
+    display: table;
+    float: right;
+    border-spacing: 10px;
+    text-transform: uppercase;
+}
+
+nav.home {
+    float: left;
+    border-spacing: 10px;
+    text-transform: uppercase;
+}
+
+nav a {
+    display: table-cell;
+    vertical-align: middle;
+    color: inherit;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    padding-left: 10px;
+    text-shadow: 0px 0px 2px rgba(234, 234, 234, 0.25);
+}
+
+nav.home a {
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.9px;
+}
+
+.logo-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0; left: 0;
+}
+
+.logo-wrapper .logo {
+    position: fixed;
+    width: 540px;
+    max-width: calc(100vw - 80px);
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -20px
+}
+
+.logo-wrapper .logo .logo-fill,
+.logo-wrapper .logo .logo-outline {
+    width: auto;
+    height: 240px;
+    position: absolute;
+}
+
+.top {
+    z-index: 100;
+    pointer-events: none;
+}
+
+.bottom {
+    z-index: -10;
+}
+
+.logo-wrapper .logo .logo-outline {
+    z-index: 20;
+}
+
+.logo-wrapper .logo .logo-fill {
+    z-index: 10;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 50px;
+    overflow: hidden;
+    z-index: -20;
+}
+
+.index .hero {
+    margin-bottom: 0;
+}
+
+.hero img {
+    float: left;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero video {
+    float: left;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.panel {
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.panel.twothird {
+  column-count: 1;
+  column-gap: 0;
+}
+
+.panel.full {
+  column-count: 1;
+  column-gap: 0;
+}
+
+.panel .tile {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 50px;
+    width: 100%;
+    overflow: auto;
+}
+
+.panel.full  .tile  {
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.panel.twothird  .tile  {
+    padding: 0 33% 0 50px;
+    box-sizing: border-box;
+}
+
+.panel.half  .tile  {
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.panel .tile img {
+    width: 100%;
+    display: block;
+}
+
+.panel .tile .hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.6);
+    display: none;
+}
+
+.panel .tile:hover .hover  {
+   display: block;
+}
+
+article {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+article .left {
+    width: calc(50vw - 25px);
+    padding: 0 50px;
+    float: left;
+    box-sizing: border-box;
+}
+
+article .middle {
+    width: calc(50vw - 25px);
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+article .right {
+    width: calc(50vw - 25px);
+    padding-right: 50px;
+    float: right;
+    box-sizing: border-box;
+}
+
+article img {
+    width: 100%;
+}
+
+article .middle img {
+    margin-bottom: 20px;
+}
+
+.project video {
+    width: calc(100% - 100px)    !important;
+    height: auto   !important;
+    background-color: red;
+    margin: 0 50px 50px 50px ;
+}
+
+.preview {
+    width: 70%;
+    margin: 0 auto 40px auto;
+    overflow: auto;
+}
+
+.preview .item {
+    width: calc(50% - 40px);
+    margin: 0 20px;
+    float: left;
+    overflow: auto;
+}
+
+.preview .item .image {
+    width: 100%;
+    height: 20vw;
+    overflow: hidden;
+}
+
+.preview .item .image img {
+    width: 100%;
+}
+
+.preview .item h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
