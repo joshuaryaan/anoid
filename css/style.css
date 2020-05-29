@@ -300,3 +300,27 @@ article .middle img {
     margin-top: 10px;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 630px) {
+
+    .logo-wrapper .logo {
+        height: 31vw;
+        width: 350px;
+    }
+
+    .logo-wrapper .logo .logo-fill,
+    .logo-wrapper .logo .logo-outline {
+        width: auto;
+        height: 31vw;
+    }
+    
+    .panel {
+      column-count: 1;
+      column-gap: 50px;
+    }
+    
+    .panel .tile {
+        margin: 0 0 20px;
+    }
+    
+}
