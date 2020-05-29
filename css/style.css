@@ -302,7 +302,11 @@ article .middle img {
 }
 
 @media screen and (max-width: 630px) {
-
+    
+    .navigation {
+        padding: 0 10px;
+    }
+    
     .logo-wrapper .logo {
         height: 31vw;
         width: 350px;
@@ -321,6 +325,52 @@ article .middle img {
     
     .panel .tile {
         margin: 0 0 20px;
+    }
+    
+    article {
+        margin-bottom: 20px;
+    }
+    
+    article .left {
+        width: 100vw;
+        padding: 0 20px;
+    }
+
+    article .middle {
+        width: calc(50vw - 25px);
+        margin: 0 auto;
+        word-wrap: break-word;
+    }
+
+    article .right {
+        width: 100vw;
+        padding: 20px 20px 0 20px;
+    }
+    
+    .panel.full  .tile, 
+    .panel.twothird  .tile, 
+    .panel.half  .tile {
+        padding: 0;
+    }
+    
+    .project video {
+        width: calc(100% - 40px) !important;
+        height: auto   !important;
+        background-color: red;
+        margin: 0 20px 20px 20px ;
+    }
+    
+    .preview {
+        width: 100%;
+        margin: 0 auto 40px auto;
+        overflow: auto;
+    }
+
+    .preview .item {
+        width: calc(50% - 40px);
+        margin: 0 20px;
+        float: left;
+        overflow: auto;
     }
     
 }
