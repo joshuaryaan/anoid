@@ -303,6 +303,7 @@ article .middle img {
 
 @media screen and (max-width: 630px) {
     
+    .index .navigation,
     .navigation {
         padding: 0 10px;
     }
