@@ -313,7 +313,6 @@ article .middle img:not(p img) {
 .project video {
     width: calc(100% - 100px)    !important;
     height: auto   !important;
-    background-color: red;
     margin: 0 50px 50px 50px ;
 }
 
