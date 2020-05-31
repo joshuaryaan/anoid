@@ -51,6 +51,10 @@ p {
     letter-spacing: 0.7px;
 }
 
+.mobile {
+    display: none;
+}
+
 .index {
     background-image: url("../media/background.jpg");
     background-attachment: fixed;
@@ -97,7 +101,7 @@ nav a {
     font-weight: 400;
     letter-spacing: 0.9px;
     padding-left: 10px;
-    text-shadow: 0px 0px 2px rgba(234, 234, 234, 0.25);
+    text-shadow: 0px 0px 2px rgba(234, 234, 234, 0.15);
 }
 
 nav.home a {
@@ -105,6 +109,12 @@ nav.home a {
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.9px;
+}
+
+nav img {
+    height: 18px;
+    margin: 10px;
+    padding-top: 2px;
 }
 
 .logo-wrapper {
@@ -310,9 +320,43 @@ article .middle img {
 
 @media screen and (max-width: 630px) {
     
+    .mobile {
+        display: block;
+    }
+    
     .index .navigation,
     .navigation {
         padding: 0 10px;
+    }
+    
+    .menu {
+        height: 18px;
+        margin: 23px 10px 27px 0;
+        float: right;
+        padding: 6px;
+    }
+    
+    .close {
+        height: 18px;
+        position: absolute;
+        top: 30px; right: 30px;
+        padding: 4px
+    }
+    
+    .navigation .links {
+        display: none;
+        position: fixed;
+        z-index: 200;
+        background-color: black;
+        color: white;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .navigation .links a {
+        display: block;
+        margin: 40px;
     }
     
     .logo-wrapper .logo {
