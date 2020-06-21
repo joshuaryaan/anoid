@@ -336,6 +336,12 @@ article .middle img:not(p img) {
     overflow: hidden;
 }
 
+.preview .item .landscape {
+    width: calc(35vw - 40px);
+    height: calc(19vw);
+    overflow: hidden;
+}
+
 .preview .item .image img {
     width: 100%;
 }
