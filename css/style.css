@@ -20,7 +20,7 @@
     padding: 30px 30px;
     width: 300px;
     height: 100%;
-    background-color: rgba(45, 46, 47, 0.99);
+    background-color: rgba(45, 46, 47, 0.96);
     color: #eaeaea;
     top: 0;
     right: 0;
@@ -53,7 +53,7 @@
 
 .pop-up .close {
     position: absolute;
-    top: 32px;
+    top: 35px;
     right: 30px;
     cursor: pointer;
 }
@@ -61,6 +61,28 @@
 .pop-up .close img {
     width: 22px;
 } 
+
+.open {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.open h3 {
+    font-size: 16px;
+    margin-left: 10px;
+    float: left;
+    color: white;
+}
+
+.open img {
+    width: 20px;
+    margin-top: 5px;
+    float: left;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 
 body {
     margin: 0;
