@@ -1,11 +1,43 @@
 $(document).ready(function () { 
-    //$( ".links a" ).hide();
-    $(".menu").click(function(){
-        $( ".links" ).fadeIn(300);
-        $( ".links a" ).fadeIn(800);
-    });
     $(".close").click(function(){
-        $( ".links a" ).fadeOut(300);
-        $( ".links" ).fadeOut(800);
-    });
+      hideMenu();
+    });  
+
+    var away = false;
+    
+    if($(window).width() < 630)
+        {
+           $(document).scroll(function() {
+                if ($(document).scrollTop() > 400) {
+                    if (!away) {
+                        away = true;
+                        $(".pop-up").animate({
+                            right: '-=85%'
+                          }, 400, function() {
+                            // Animation complete.
+                          });
+                    }
+                } else { 
+                }
+            });
+        } else {
+           $(document).scroll(function() {
+            if ($(document).scrollTop() > 400) {
+                if (!away) {
+                    away = true;
+                    hideMenu();
+                }
+            } else { 
+            }
+        });
+        }
+    
 });
+
+function hideMenu() {
+  $(".pop-up").animate({
+        right: '-=300px'
+      }, 400, function() {
+        // Animation complete.
+      });
+}
