@@ -1,10 +1,19 @@
 $(document).ready(function () {  
 
+    $(".menu").click(function(){
+        $( ".links" ).fadeIn(300);
+        $( ".links a" ).fadeIn(800);
+    });
+    $(".close").click(function(){
+        $( ".links a" ).fadeOut(300);
+        $( ".links" ).fadeOut(800);
+    });
+    
     var away = false;
     
     if($(window).width() < 630)
         {
-           $(".close").click(function(){
+           $(".hide").click(function(){
               hideMenuMobile();
             });
             $(".open").click(function(){
@@ -20,7 +29,7 @@ $(document).ready(function () {
                 }
             });
         } else {
-            $(".close").click(function(){
+            $(".hide").click(function(){
               hideMenu();
             });
             $(".open").click(function(){

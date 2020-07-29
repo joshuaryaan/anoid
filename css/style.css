@@ -51,14 +51,14 @@
     color: #A6A6A6;
 }
 
-.pop-up .close {
+.pop-up .hide {
     position: absolute;
     top: 30px;
     right: 30px;
     cursor: pointer;
 }
 
-.pop-up .close img {
+.pop-up .hide img {
     width: 22px;
 } 
 
